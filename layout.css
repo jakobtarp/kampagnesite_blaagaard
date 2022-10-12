@@ -1,3 +1,9 @@
+/* OM OS styling */
+.portfolio_tekst {
+  margin-bottom: 100vh;
+  margin-top: 8rem;
+}
+/* INDEX styling */
 :root {
   /* --main-color: #0d05f2; */
   --sec-color: black;
@@ -140,6 +146,7 @@ article {
     margin-right: auto;
     /* width: 50%; */
     max-width: 90%;
+    margin-bottom: 2rem;
   }
   header {
     display: block;
