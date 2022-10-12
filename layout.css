@@ -1,5 +1,10 @@
-.logo {
-  width: 25vh;
+:root {
+  --main-color: #0d05f2;
+  --sec-color: #999df2;
+}
+
+body {
+  margin: 1rem;
 }
 
 header {
@@ -7,20 +12,45 @@ header {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  margin: 1rem;
+  font-family: motiva-sans, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  margin-bottom: 4rem;
+  color: var(--main-color);
+  /* font-size: 30px; */
+  /* text-align: center; */
+  display: block;
+  /* margin-left: auto;
+  margin-right: auto; */
+  /* width: 50%; */
 }
+
+nav ul {
+  font-family: motiva-sans, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 .menu {
   text-align: end;
   list-style: none;
+  text-transform: uppercase;
+  justify-content: space-between;
 }
 .menu a {
   text-decoration: none;
-  color: black;
+  color: var(--main-color);
+
   /* font-family: ; */
 }
 
 img {
   max-width: 100%;
+  aspect-ratio: 1/1.5;
 }
 
 .hide {
@@ -29,29 +59,56 @@ img {
 }
 
 .grid {
-  margin: 20px;
   row-gap: 20px;
 }
 
 article {
   margin-bottom: 2rem;
-  padding-inline: 10px;
+  padding: 10px;
 }
 
 footer {
   text-align: center;
   font-size: 10px;
+  font-family: motiva-sans, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  color: var(--sec-color);
 }
 
-h1 {
+h2 {
+  text-align: center;
+  font-family: motiva-sans, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+
+h3 {
+  text-align: center;
+  font-family: motiva-sans, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  text-transform: uppercase;
+  color: var(--sec-color);
+}
+.overskrift {
+  font-family: kepler-std-display, serif;
+  font-weight: 300;
+  font-style: italic;
+  text-transform: none;
+  margin-top: -2.3rem;
+  margin-bottom: -4px;
   text-align: center;
 }
 
 article {
-  border: solid 3px;
+  border: solid 1.5px;
+  color: var(--sec-color);
 }
 
-@media (min-width: 500px) {
+@media (min-width: 700px) {
   .menu {
     display: flex;
     gap: 10px;
@@ -62,7 +119,19 @@ article {
   }
   .grid_1-1-1 {
     display: flex;
-    /* grid-template-columns: repeat(3, minmax(150px, 300px)); */
     gap: 10px;
+  }
+  .billed_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 800px) {
+  article {
+    max-width: 70%;
+    margin: auto;
+    margin-bottom: 2rem;
   }
 }

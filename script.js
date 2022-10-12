@@ -2,10 +2,10 @@
   //console.clear();
   const nav = document.querySelector("nav:where(header *)");
   if (!nav) return;
-  const breakpoint = window.getComputedStyle(nav).getPropertyValue("--less-than") || "500";
+  const breakpoint = window.getComputedStyle(nav).getPropertyValue("--less-than") || "700";
   const mobileMQ = window.matchMedia(`(max-width: ${breakpoint - 1}px)`);
   const iconClose = "M18 6L6 18M6 6l12 12";
-  const iconMenu = "M4 12h16M4 6h16M4 18h16";
+  const iconMenu = "M4 12h36M4 6h36M4 18h36";
   const svg = (d) => `<svg viewBox="0 0 24 24" width="24" height="24">
     <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="${d}"></path>
   </svg>`;
